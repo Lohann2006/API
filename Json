@@ -1,0 +1,26 @@
+var expresso = exigir ( 'expresso' ) ;
+
+var app = express ( ) ;
+
+aplicativo . use ( express . json ( ) )
+
+var alunos = [
+
+    { nome : "Maria" , idade : 15 , sexo : 'F' } ,
+
+    { nome : "João" , idade : 16 , sexo : 'M' } ,
+
+    { nome : "Francisco" , idade : 17 , sexo : 'M' }
+
+]
+
+aplicativo . get ( '/' , ( req , res ) => {
+
+    res . estado ( 200 ) . json ( alunos ) ;
+
+}( ) => {
+
+    consola . log ( "servidor ligado" )
+
+} )
+
